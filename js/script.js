@@ -6,13 +6,28 @@ const personalMovieDB = {
     genres: [],
     privat: false
 };
-const a = prompt('Один из фильмов вы смотреи в последний раз?', ''),
-      b = prompt('На сколько вы его оцениваете?', ''),
-      c = prompt('Один из фильмов вы смотреи в последний раз?', ' '),
-      d = prompt('На сколько вы его оцениваете?', '');
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
+for (let i = 0; i < 2; i++){
+    const a = prompt('Один из фильмов вы смотреи в последний раз?', ''),
+          b = prompt('На сколько вы его оцениваете?', '');
+    if (a != null && b != null && a != '' && b != null && a.length < 50) {
+        personalMovieDB.movies[a] = b;
+        console.log('xd');
+    } else {
+        console.log('ne xd(');
+        i--;
+    }
+}
+if (personalMovieDB.count < 10){
+    console.log('Ебать ты лох, так мало');
+} else if ( personalMovieDB.count >= 10 && personalMovieDB.count < 30){
+    console.log('ну нормас нормас');
+} else if ( personalMovieDB.count >= 30) {
+    console.log('Ты че ваще ебнутый?');
+} else {
+    console.log('пошел нахуй');
+}
 
 console.log(personalMovieDB);
+
 
