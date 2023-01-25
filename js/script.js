@@ -31,13 +31,13 @@ function rememberMyFilms(){
 
 function detectPersonalLevel() {
     if (personalMovieDB.count < 10){
-        console.log('Ебать ты лох, так мало');
+        console.log('Маловато');
     } else if ( personalMovieDB.count >= 10 && personalMovieDB.count < 30){
-        console.log('ну нормас нормас');
+        console.log('Приемлимо');
     } else if ( personalMovieDB.count >= 30) {
-        console.log('Ты че ваще ебнутый?');
+        console.log('Да вы киноман');
     } else {
-        console.log('пошел нахуй');
+        console.log('Ошибка, такого значения нет');
     }
 }
 
