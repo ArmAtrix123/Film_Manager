@@ -134,7 +134,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const makeChanges = () => {
         changeGenre.textContent = 'Драма';
-        poster.style.backgroundImage = 'url(../img/bg.jpg)';
     };
 
     function createMovieList(film, parent) {
